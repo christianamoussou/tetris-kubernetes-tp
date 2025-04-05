@@ -16,6 +16,7 @@ spec:
       containers:
       - name: games-backend
         image: esgis-games/games-backend:latest
+        imagePullPolicy: IfNotPresent
         ports:
         - containerPort: 5000
         env:
